@@ -40,7 +40,7 @@ The project is at an early stage (version 0.x). The version history is in [CHANG
 
 ### Updating
 
-Installed copies check the repository's GitHub releases for a new version. Until the first release is published, the check finds nothing. Zotero updates installed plugins automatically by default. To review each update before it installs, untick "Update Plugins Automatically" in the gear menu in Tools > Plugins, shown ticked in the second screenshot under [Install](#install).
+Installed copies check the repository's GitHub releases for a new version. A copy of 0.2.0, the first release, found no update when checked on 2026-11-10, as expected, because it is the newest release. Zotero updates installed plugins automatically by default. To review each update before it installs, untick "Update Plugins Automatically" in the gear menu in Tools > Plugins, shown ticked in the second screenshot under [Install](#install).
 
 You can also install an update by hand, the same way as the first install. Installing the new version over the old one is the recommended route, but it has not been tested yet, and neither has whether it needs a restart. As a precaution, do not remove the old version first; if you did, restart Zotero before installing again.
 
@@ -379,7 +379,7 @@ npx skills add miguelppais/zotero-script-bridge -a claude-code -s zotero-script-
 - The tool sends anonymous usage data to skills.sh, which lists repositories by install count. To turn that off, set `DISABLE_TELEMETRY=1` in the environment first: `DISABLE_TELEMETRY=1 npx skills add ...` in a Unix shell, or `$env:DISABLE_TELEMETRY = "1"` in PowerShell.
 - In a project that has no `.claude` folder yet, create the folder first. Otherwise the tool can skip Claude Code and leave the skill only in the shared `.agents` folder.
 - Without a version, the command installs the repository's current files from its default branch, not a release. The skill's client can therefore be newer than the plugin you installed.
-- The install was tested on 2026-11-10 from a local export of this repository, not from GitHub. The skill folder then held `SKILL.md` and a byte-identical copy of the client, and that copy's `--ping` returned the Zotero version. The command as written above, run against GitHub, will first be checked at the first release. After any install, check that the skill folder holds both `SKILL.md` and `zotero_script_bridge.py`.
+- The install was tested on 2026-11-10 from a local export of this repository, not from GitHub. The skill folder then held `SKILL.md` and a byte-identical copy of the client, and that copy's `--ping` returned the Zotero version. The command as written above was run against GitHub on 2026-11-10, after the 0.2.0 release: the installed client matched the release's client, and its `--ping` returned the Zotero version. After any install, check that the skill folder holds both `SKILL.md` and `zotero_script_bridge.py`.
 - The tool also writes a `skills-lock.json` file at the root of the project folder. It records where the skill came from and how it was copied.
 
 **Or copy the folder by hand.** Copy the whole `skills/zotero-script-bridge/` folder from a clone of this repository into your agent's skills folder. Take the folder, not just `SKILL.md`: the client is in it.
