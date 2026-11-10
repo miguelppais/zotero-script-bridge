@@ -1,0 +1,23 @@
+# Build output: the .xpi is built, never committed
+*.xpi
+dist/
+build/
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs, editor and OS files
+*.log
+*.swp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+token

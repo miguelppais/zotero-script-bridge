@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Zotero Script Bridge",
+  "version": "0.2.0",
+  "description": "Runs JavaScript sent from this machine with a token, so local scripts and coding agents can organise the library without copy-paste.",
+  "applications": {
+    "zotero": {
+      "id": "zotero-script-bridge@zotero-script-bridge",
+      "update_url": "https://github.com/miguelppais/zotero-script-bridge/releases/latest/download/updates.json",
+      "strict_min_version": "6.999",
+      "strict_max_version": "10.*"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">Zotero Script Bridge logo: two code brackets joined by a bridge arch</title>
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="#1f5f85"/>
+  <g fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 42 L14 64 L34 86"/>
+    <path d="M94 42 L114 64 L94 86"/>
+  </g>
+  <g fill="none" stroke="#f2b84b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 88 Q64 28 88 88"/>
+    <path d="M36 88 H92"/>
+  </g>
+</svg>

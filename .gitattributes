@@ -1,0 +1,15 @@
+# The plugin sources are LF in the repository, in contributors' checkouts and in
+# the .xpi, whatever core.autocrlf says on the machine.
+plugin/*.js text eol=lf
+plugin/*.json text eol=lf
+
+# Git must never convert line endings inside an image, or the bytes the export
+# copies would differ from the bytes that were checked.
+*.png binary
+# The SVG is text; LF on every checkout keeps its bytes the same everywhere.
+*.svg text eol=lf
+
+# The skill ships a byte-identical copy of the client, so both are LF on every
+# checkout; a CRLF working tree would make the two differ from the committed bytes.
+client/zotero_script_bridge.py text eol=lf
+skills/zotero-script-bridge/zotero_script_bridge.py text eol=lf

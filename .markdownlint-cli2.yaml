@@ -1,0 +1,12 @@
+config:
+  # Keep a Changelog repeats the heading "Added" (and the others) under each
+  # version, so only headings under the same parent count as repeats.
+  MD024:
+    siblings_only: true
+  # Each paragraph is one line, so line length is not enforced.
+  MD013: false
+  # The README folds long reference sections with <details> and <summary>.
+  MD033:
+    allowed_elements:
+      - details
+      - summary
